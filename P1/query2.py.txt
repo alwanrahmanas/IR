@@ -1,0 +1,7 @@
+news[berita1,berita2,berita3]
+
+query="corona"
+import re 
+for doc in news:
+    if re.search(query,doc):
+        print(doc)
